@@ -31,16 +31,16 @@ python3 -m venv venv
 
 Edit all constants in main.py.
 
-Open `wiener-linien-api-mirror.service` and edit all paths to the working
+Open `wienerlinien-api-mirror.service` and edit all paths to the working
 directory.
 
 Start the systemd service with:
 
 ```bash
-sudo cp wiener-linien-api-mirror.service /etc/systemd/system
+sudo cp wienerlinien-api-mirror.service /etc/systemd/system
 sudo systemctl daemon-reload
-sudo systemctl enable wiener-linien-api-mirror.service
-sudo systemctl start wiener-linien-api-mirror.service
+sudo systemctl enable wienerlinien-api-mirror.service
+sudo systemctl start wienerlinien-api-mirror.service
 ```
 
 The service should now be up and running 🎉
@@ -48,12 +48,12 @@ The service should now be up and running 🎉
 To stop the service run:
 
 ```bash
-sudo systemctl stop wiener-linien-api-mirror.service
+sudo systemctl stop wienerlinien-api-mirror.service
 ```
 
 To update the service to a new version (commit) run:
 
 ```bash
 git pull
-sudo systemctl restart wiener-linien-api-mirror.service
+sudo systemctl restart wienerlinien-api-mirror.service
 ```
