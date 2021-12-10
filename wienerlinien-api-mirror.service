@@ -1,0 +1,12 @@
+[Unit]
+Description=Simple Api Mirror
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/paul/wienerlinien_api_mirror
+ExecStart=/bin/bash -c 'source /home/paul/wienerlinien_api_mirror/venv/bin/activate; python3.9 main.py'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
